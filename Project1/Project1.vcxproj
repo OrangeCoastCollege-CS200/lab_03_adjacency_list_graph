@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.cpp" />
+    <ClCompile Include="D:\Severiano\Downloads\review_2_singly_linked_list\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

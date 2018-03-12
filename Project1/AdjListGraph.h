@@ -8,9 +8,10 @@
 using namespace std;
 
 
-const int MAX = 11;
+const int CAPACITY = 11;
 
 class AdjListGraph {
+	friend ostream& operator<< (ostream&, const AdjListGraph&);
 public:
 	AdjListGraph();
 		//default constructor

@@ -15,18 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.cpp">
+    <ClCompile Include="AdjListGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AdjListGraph.cpp">
+    <ClCompile Include="AnyList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.h">
+    <ClInclude Include="AdjListGraph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AdjListGraph.h">
+    <ClInclude Include="AnyList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

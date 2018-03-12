@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -115,11 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.cpp" />
-    <ClCompile Include="D:\Severiano\Downloads\review_2_singly_linked_list\Main.cpp" />
+    <ClCompile Include="AdjListGraph.cpp" />
+    <ClCompile Include="AnyList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Severiano\Downloads\review_2_singly_linked_list\AnyList.h" />
+    <ClInclude Include="AdjListGraph.h" />
+    <ClInclude Include="AnyList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -44,7 +44,7 @@ public:
 
 private:
 	string * verticies;
-	AnyList * graph;
+	AnyList ** graph;
 	int numVerticies;
 	int capacity;
 };

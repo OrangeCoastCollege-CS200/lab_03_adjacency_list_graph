@@ -45,7 +45,7 @@ AnyList& AnyList::operator=(AnyList&&other) {
 
 
 	//insertFront
-void AnyList::insertFront(int newData)
+void AnyList::insertFront(const string& newData)
 {	
 	Node *ptrToNewNode;		//create a pointer to point to a new node
 	ptrToNewNode = new Node;	//create a new node
@@ -70,7 +70,7 @@ void AnyList::insertFront(int newData)
 }
 
 	//deleteNode
-void AnyList::deleteNode(int deleteData)
+void AnyList::deleteNode(const string& deleteData)
 {
 	//Case: List is empty
 	if (ptrToFirst == nullptr) 

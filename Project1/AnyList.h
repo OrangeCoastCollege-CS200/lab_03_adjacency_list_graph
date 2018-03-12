@@ -9,16 +9,16 @@ class Node
 {
 public:
 	Node() : data(0), ptrToNext(nullptr) {}
-	Node(int theData, Node *newPtrToNext) 
+	Node(const string& theData, Node *newPtrToNext)
 		: data(theData), ptrToNext(newPtrToNext){}
 	Node* getPtrToNext() const { return ptrToNext; }
-	int getData( ) const { return data; }
-    void setData(int theData) { data = theData; }
+	string getData( ) const { return data; }
+    void setData(const string& theData) { data = theData; }
 	void setPtrToNext(Node *newPtrToNext) 
 		{ ptrToNext = newPtrToNext; }
 	~Node(){}
 private:
-    int data;		
+    string data;		
     Node *ptrToNext;	//pointer that points to next node
 };
 
@@ -43,11 +43,11 @@ public:
 	AnyList& operator=(AnyList&&);
 		//move assignment operator
 
-	void insertFront(int);	
+	void insertFront(const string&);	
 		//insertFront - Inserts a node to the front of the list.
 		//@param int - Value stored in the node that is inserted.
 
-	void deleteNode(int);	
+	void deleteNode(const string&);
 		//deleteNode - Deletes a node from the list.
 		//@param int - Value stored in the node to be deleted.
 

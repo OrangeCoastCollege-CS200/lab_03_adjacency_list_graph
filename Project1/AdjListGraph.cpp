@@ -1,3 +1,11 @@
+/*
+Badajoz, Severiano
+
+CS A200
+March 11, 2018
+
+Lab 03
+*/
 
 #include <iostream>
 #include "AdjListGraph.h"
@@ -101,15 +109,16 @@ AdjListGraph& AdjListGraph::operator=(AdjListGraph&& other) {
 }
 
 ostream& operator<< (ostream& out, const AdjListGraph& printThis) {
-	if (printThis.numVerticies == 0) out << "EMPTY";
+	if (printThis.numVerticies  < 1) out << "EMPTY";
 	else {
 		int i = 0;
-		for (; i < printThis.numVerticies; i++)
+		for (; i < printThis.numVerticies - 1; i++)
 			out << "Vertex: " << printThis.verticies[i] << " -> " << *printThis.graph[i] << endl;
 		out << "Vertex:  " << printThis.verticies[i] << " -> " << *printThis.graph[i];
 
-		return out;
+		
 	}
+	return out;
 }
 
 int AdjListGraph::getNumVerticies() const {

@@ -47,25 +47,7 @@ AnyList& AnyList::operator=(AnyList&&other) {
 	//insertFront
 void AnyList::insertFront(const string& newData)
 {	
-	Node *ptrToNewNode;		//create a pointer to point to a new node
-	ptrToNewNode = new Node;	//create a new node
-
-	ptrToNewNode->setData(newData);		//store data in the new node
-	ptrToNewNode->setPtrToNext(ptrToFirst);	//set new node's pointer to point to the first node
-
-	ptrToFirst = ptrToNewNode;		//make the new node be the "first" node
-
-	/*
-		There is better way to write the four statements above:
-
-			Node *ptrToNewNode = new Node(newData, ptrToFirst);
-			ptrToFirst = ptrToNewNode;		
-
-		Or even better:
-		    
-			ptrToFirst = newNode(newData, ptrToFirst);
-	*/	
-
+	ptrToFirst = new Node(newData, ptrToFirst);
 	++count;
 }
 
@@ -172,11 +154,14 @@ AnyList::~AnyList()
 }
 	//overloaded insertion operator
 ostream& operator<<(ostream& out, const AnyList& other) {
-	Node *curr = other.ptrToFirst;
-	while (curr->getPtrToNext() != nullptr) {
-		out << curr->getData() << " ";
-		curr = curr->getPtrToNext();
+	if (other.count > 0) {
+		Node *curr = other.ptrToFirst;
+		while (curr->getPtrToNext() != nullptr) {
+			out << curr->getData() << " ";
+			curr = curr->getPtrToNext();
+		}
+		out << curr->getData() << endl;
 	}
-	out << curr->getData() << endl;
+	else out << "EMPTY" << endl;
 	return out;
 }

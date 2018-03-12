@@ -1,7 +1,19 @@
+/*
+Badajoz, Severiano
+
+CS A200
+March 11, 2018
+
+Lab 03
+*/
+
 #include <iostream>
 #include "AdjListGraph.h"
 
 using namespace std;
+
+
+void print(const AdjListGraph& graph);
 
 int main()
 {

@@ -31,6 +31,10 @@ public:
 	AdjListGraph& operator=(AdjListGraph&&);
 		//overloaded move assignment operator
 
+	int getNumVerticies() const;
+
+	int getCapacity() const;
+
 	void createGraph(const vector<vector<string>>& data);
 
 	void insertVertex(const string& newVertex, const vector<string>& predList,

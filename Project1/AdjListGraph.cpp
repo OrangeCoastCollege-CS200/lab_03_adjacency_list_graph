@@ -168,6 +168,13 @@ void AdjListGraph::insertVertex(const string& vertex, const vector<string>& pred
 	else cerr << "Incorrectly trying to insert a vertex into a saturated graph";
 }
 
+vector<string> AdjListGraph::traverse() const {
+	vector<string> ret;
+	for (int i = 0; i < numVerticies; i++)
+		ret.push_back(verticies[i]);
+	return ret;
+}
+
 void AdjListGraph::emptyGraph() {
 	for (int i = 0; i < numVerticies; ++i)
 	{

@@ -40,6 +40,8 @@ public:
 	void insertVertex(const string& newVertex, const vector<string>& predList,
 		const vector<string>& succList);
 
+	vector<string> traverse() const;
+
 	void emptyGraph();
 
 	~AdjListGraph();

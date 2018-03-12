@@ -8,7 +8,7 @@
 using namespace std;
 
 
-const int CAPACITY = 11;
+const int DEFAULT_CAPACITY = 11;
 
 class AdjListGraph {
 	friend ostream& operator<< (ostream&, const AdjListGraph&);

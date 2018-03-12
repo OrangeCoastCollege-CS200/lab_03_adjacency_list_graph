@@ -7,6 +7,9 @@
 #include "AnyList.h"
 using namespace std;
 
+
+const int MAX = 11;
+
 class AdjListGraph {
 public:
 	AdjListGraph();
@@ -28,10 +31,12 @@ public:
 		//overloaded move assignment operator
 
 	void createGraph(const vector<vector<string>>& data);
+
 	void insertVertex(const string& newVertex, const vector<string>& predList,
 		const vector<string>& succList);
 
 	void emptyGraph();
+
 	~AdjListGraph();
 	
 
